@@ -8,4 +8,42 @@ h1 {
     color: red;
 }
 
+.about {
+    width: 100%;
+    max-width: 640px;
+    padding: 1.25rem;
+    border: 2px solid #176b64;
+    box-sizing: border-box;
+}
 
+.about img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about h2 {
+    color: teal;
+}
+
+h2 {
+    color: purple;
+}
+
+.visitor-form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+}
+
+@media (max-width: 600px) {
+    .intro-grid {
+        grid-template-columns: 1fr;
+    }
+}
