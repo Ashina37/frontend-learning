@@ -11,3 +11,7 @@
 - Подключены HTML, CSS и JavaScript.
 - Настроен Git.
 - Проверено SSH-подключение к GitHub.
+
+## Опубликованная версия 
+
+[Открыть учебную страницу][https://ashina37.github.io/frontend-learning/]
