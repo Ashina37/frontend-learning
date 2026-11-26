@@ -265,3 +265,121 @@ let message = (login == "Сотрудник") ? "Привет" :
 Следующий шаг:
 
 - Логические операторы
+
+
+## Занятие 7. Основы JavaScript 26.11.2026
+
+11. Логические операторы
+
+
+
+
+alert(null || 2 || undefined); // 2
+
+
+
+
+alert( alert(1) || 2 || alert(3)); // 1, 2
+
+
+
+
+alert(1 && null && 2); // null
+
+
+
+
+alert( alert(1) && alert(2)); // 1, undefined 
+
+
+
+
+
+alert( null || 2 && 3 || 4); // 3
+
+
+
+
+let value = NaN;
+
+value &&= 10; // NaN
+value ||= 20; // 20
+value &&= 30; // 30
+value ||= 40; // 30
+
+console.log(value);
+
+
+
+let age = 91;
+
+if (age >= 14 && age <= 90) {
+    console.log("Верно!")
+} else {
+    console.log("Неверно!")
+}
+
+
+
+
+
+let age = 1000;
+
+if (age < 14 || age > 90) {
+    console.log("Верно!")
+} else {
+    console.log("Неверно!")
+}
+
+
+let age = 91;
+
+if (!(age >= 14) || !(age <= 90) ) {
+    console.log("Верно!")
+} else {
+    console.log("Неверно!")
+}
+
+
+
+
+
+if (-1 || 0) alert( 'first' ); // first
+if (-1 && 0) alert( 'second' ); 
+if (null || -1 && 1) alert( 'third' ); // third 
+
+
+
+
+
+let login = prompt("Кто там?", "");
+let pass;
+
+if (login === "Админ") {
+    pass = prompt("Пароль", "");
+    if (pass === "Я Главный") {
+        console.log("Здравствуйте!")
+    } else if (pass === "" || pass === null ) {
+        console.log("Отменено")
+    } else {
+        console.log("Неверный пароль")
+    }
+} else if (login === null || login === "" ) {
+    console.log("Отменено")
+} else {
+    console.log("Я вас не знаю")
+}
+
+
+Что сделал:
+
+- Научился писать маленькое ветвление 
+
+Что понял: 
+
+- логическое И(&&) и ИЛИ(||)
+
+Что не понял:
+
+- Не до конца пока хорошо чувствуется (||= &&= ?)
+
